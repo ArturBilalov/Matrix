@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		FEE00479282C39D500436A96 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEE00478282C39D500436A96 /* AppDelegate.swift */; };
 		FEE0047B282C39D500436A96 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEE0047A282C39D500436A96 /* SceneDelegate.swift */; };
-		FEE0047D282C39D500436A96 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEE0047C282C39D500436A96 /* ViewController.swift */; };
+		FEE0047D282C39D500436A96 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEE0047C282C39D500436A96 /* MainViewController.swift */; };
 		FEE00480282C39D500436A96 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FEE0047E282C39D500436A96 /* Main.storyboard */; };
 		FEE00483282C39D500436A96 /* MatrixTrainingApp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = FEE00481282C39D500436A96 /* MatrixTrainingApp.xcdatamodeld */; };
 		FEE00485282C39D700436A96 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FEE00484282C39D700436A96 /* Assets.xcassets */; };
@@ -20,7 +20,7 @@
 		FEE00475282C39D500436A96 /* MatrixTrainingApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MatrixTrainingApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FEE00478282C39D500436A96 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FEE0047A282C39D500436A96 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		FEE0047C282C39D500436A96 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		FEE0047C282C39D500436A96 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		FEE0047F282C39D500436A96 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		FEE00482282C39D500436A96 /* MatrixTrainingApp.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = MatrixTrainingApp.xcdatamodel; sourceTree = "<group>"; };
 		FEE00484282C39D700436A96 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -60,7 +60,7 @@
 			children = (
 				FEE00478282C39D500436A96 /* AppDelegate.swift */,
 				FEE0047A282C39D500436A96 /* SceneDelegate.swift */,
-				FEE0047C282C39D500436A96 /* ViewController.swift */,
+				FEE0047C282C39D500436A96 /* MainViewController.swift */,
 				FEE0047E282C39D500436A96 /* Main.storyboard */,
 				FEE00484282C39D700436A96 /* Assets.xcassets */,
 				FEE00486282C39D700436A96 /* LaunchScreen.storyboard */,
@@ -142,7 +142,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FEE00483282C39D500436A96 /* MatrixTrainingApp.xcdatamodeld in Sources */,
-				FEE0047D282C39D500436A96 /* ViewController.swift in Sources */,
+				FEE0047D282C39D500436A96 /* MainViewController.swift in Sources */,
 				FEE00479282C39D500436A96 /* AppDelegate.swift in Sources */,
 				FEE0047B282C39D500436A96 /* SceneDelegate.swift in Sources */,
 			);
