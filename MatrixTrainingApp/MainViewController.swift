@@ -25,12 +25,12 @@ class MainViewController: UIViewController {
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "goToSecond" {
-            let x1 = segue.destination as? SecondViewController
-            x1?.y1 = Int(dayTextField.text!) ?? 0
-            x1?.y2 = Int(monthTextField.text!) ?? 0
-            x1?.y3 = Int(yearTextField.text!) ?? 0
-            x1?.y4 = x1!.y1 + x1!.y2 + x1!.y3
-            x1?.y5 = x1!.y1 + x1!.y2 + x1!.y3 + x1!.y4
+            let y1 = segue.destination as? SecondViewController
+            y1?.x1 = Int(dayTextField.text!) ?? 0
+            y1?.x2 = Int(monthTextField.text!) ?? 0
+            y1?.m3 = Int(yearTextField.text!) ?? 0
+//            y1?.x4 = y1!.x1 + y1!.x2 + y1!.x3
+//            y1?.x5 = y1!.x1 + y1!.x2 + y1!.x3 + y1!.x4
             
         }
     }
