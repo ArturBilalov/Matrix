@@ -21,7 +21,7 @@
                             </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" systemColor="labelColor"/>
                         <constraints>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Wfd-dv-olh" secondAttribute="trailing" id="C3r-o7-8h5"/>
                             <constraint firstItem="Wfd-dv-olh" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="WmG-65-UNq"/>
@@ -37,8 +37,8 @@
     </scenes>
     <resources>
         <image name="Timer" width="1280" height="1920"/>
-        <systemColor name="systemBackgroundColor">
-            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
     </resources>
 </document>
