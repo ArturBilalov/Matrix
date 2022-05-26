@@ -14,6 +14,7 @@
 		FEE00483282C39D500436A96 /* MatrixTrainingApp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = FEE00481282C39D500436A96 /* MatrixTrainingApp.xcdatamodeld */; };
 		FEE00485282C39D700436A96 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FEE00484282C39D700436A96 /* Assets.xcassets */; };
 		FEE00488282C39D700436A96 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FEE00486282C39D700436A96 /* LaunchScreen.storyboard */; };
+		FEE00490282CE9C100436A96 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEE0048F282CE9C100436A96 /* SecondViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		FEE00484282C39D700436A96 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FEE00487282C39D700436A96 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FEE00489282C39D700436A96 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FEE0048F282CE9C100436A96 /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +63,7 @@
 				FEE00478282C39D500436A96 /* AppDelegate.swift */,
 				FEE0047A282C39D500436A96 /* SceneDelegate.swift */,
 				FEE0047C282C39D500436A96 /* MainViewController.swift */,
+				FEE0048F282CE9C100436A96 /* SecondViewController.swift */,
 				FEE0047E282C39D500436A96 /* Main.storyboard */,
 				FEE00484282C39D700436A96 /* Assets.xcassets */,
 				FEE00486282C39D700436A96 /* LaunchScreen.storyboard */,
@@ -144,6 +147,7 @@
 				FEE00483282C39D500436A96 /* MatrixTrainingApp.xcdatamodeld in Sources */,
 				FEE0047D282C39D500436A96 /* MainViewController.swift in Sources */,
 				FEE00479282C39D500436A96 /* AppDelegate.swift in Sources */,
+				FEE00490282CE9C100436A96 /* SecondViewController.swift in Sources */,
 				FEE0047B282C39D500436A96 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -299,6 +303,7 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -310,7 +315,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -327,6 +332,7 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -338,7 +344,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
