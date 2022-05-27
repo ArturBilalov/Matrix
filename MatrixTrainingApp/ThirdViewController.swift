@@ -53,8 +53,8 @@ class ThirdViewController: UIViewController {
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "goToSecond" {
             let y1 = segue.destination as? SecondViewController
-            y1?.x0 = nameTextField.text!
-            y1?.dateOfBirth = dateTextField.text!
+            y1?.x0 = nameTextField.text ?? ""
+            y1?.dateOfBirth = dateTextField.text ?? ""
         }
     }
     
