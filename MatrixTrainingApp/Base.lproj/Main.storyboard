@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="7Tp-mq-dZT">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="Stack View standard spacing" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
@@ -487,20 +487,15 @@
             </objects>
             <point key="canvasLocation" x="136.23188405797103" y="58.928571428571423"/>
         </scene>
-        <!--View Controller-->
+        <!--Third View Controller-->
         <scene sceneID="zK2-Hd-v2i">
             <objects>
-                <viewController id="7Tp-mq-dZT" sceneMemberID="viewController">
+                <viewController id="7Tp-mq-dZT" customClass="ThirdViewController" customModule="MatrixTrainingApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="VXo-bQ-wCK">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <datePicker contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="date" translatesAutoresizingMaskIntoConstraints="NO" id="99D-p6-0f3">
-                                <rect key="frame" x="0.0" y="458" width="414" height="162"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                            </datePicker>
-                            <stackView opaque="NO" contentMode="scaleToFill" spacing="141" translatesAutoresizingMaskIntoConstraints="NO" id="VUe-W2-cDM">
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="141" translatesAutoresizingMaskIntoConstraints="NO" id="QPZ-BY-Z11">
                                 <rect key="frame" x="16" y="94" width="382" height="34"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Имя" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zo2-AD-gIt">
@@ -511,12 +506,14 @@
                                     </label>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Fy0-8F-vjZ">
                                         <rect key="frame" x="183.5" y="0.0" width="198.5" height="34"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
                                 </subviews>
                             </stackView>
-                            <stackView opaque="NO" contentMode="scaleToFill" spacing="141" translatesAutoresizingMaskIntoConstraints="NO" id="gGM-5g-WrL">
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="29" translatesAutoresizingMaskIntoConstraints="NO" id="WkN-Bx-T76">
                                 <rect key="frame" x="16" y="154" width="382" height="34"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Дата рождения" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TIg-IE-2HR">
@@ -525,8 +522,10 @@
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="2eB-Je-fMW">
-                                        <rect key="frame" x="296" y="0.0" width="86" height="34"/>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="2eB-Je-fMW">
+                                        <rect key="frame" x="184" y="0.0" width="198" height="34"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
@@ -536,20 +535,27 @@
                         <viewLayoutGuide key="safeArea" id="3iN-bM-ukZ"/>
                         <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="VUe-W2-cDM" firstAttribute="leading" secondItem="3iN-bM-ukZ" secondAttribute="leading" constant="16" id="6CA-lf-9wX"/>
-                            <constraint firstItem="VUe-W2-cDM" firstAttribute="top" secondItem="3iN-bM-ukZ" secondAttribute="top" constant="50" id="EZ1-dU-mhm"/>
-                            <constraint firstItem="gGM-5g-WrL" firstAttribute="leading" secondItem="3iN-bM-ukZ" secondAttribute="leading" constant="16" id="Mud-pe-0Mz"/>
-                            <constraint firstItem="3iN-bM-ukZ" firstAttribute="trailing" secondItem="VUe-W2-cDM" secondAttribute="trailing" constant="16" id="bLl-rJ-Fk0"/>
-                            <constraint firstItem="gGM-5g-WrL" firstAttribute="top" secondItem="VUe-W2-cDM" secondAttribute="bottom" constant="26" id="cWB-o3-Yze"/>
-                            <constraint firstItem="3iN-bM-ukZ" firstAttribute="trailing" secondItem="gGM-5g-WrL" secondAttribute="trailing" constant="16" id="reg-Jc-ahJ"/>
+                            <constraint firstItem="QPZ-BY-Z11" firstAttribute="leading" secondItem="3iN-bM-ukZ" secondAttribute="leading" constant="16" id="6Th-k3-gxQ"/>
+                            <constraint firstItem="3iN-bM-ukZ" firstAttribute="trailing" secondItem="QPZ-BY-Z11" secondAttribute="trailing" constant="16" id="EPj-oH-kCL"/>
+                            <constraint firstItem="QPZ-BY-Z11" firstAttribute="top" secondItem="3iN-bM-ukZ" secondAttribute="top" constant="50" id="GCI-JB-8vV"/>
+                            <constraint firstItem="WkN-Bx-T76" firstAttribute="leading" secondItem="3iN-bM-ukZ" secondAttribute="leading" constant="16" id="doY-36-1nf"/>
+                            <constraint firstItem="WkN-Bx-T76" firstAttribute="top" secondItem="QPZ-BY-Z11" secondAttribute="bottom" constant="26" id="gQ7-yu-IzT"/>
+                            <constraint firstItem="3iN-bM-ukZ" firstAttribute="trailing" secondItem="WkN-Bx-T76" secondAttribute="trailing" constant="16" id="gjT-CE-9mO"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="dateTextField" destination="2eB-Je-fMW" id="AWo-qP-aWV"/>
+                        <outlet property="nameTextField" destination="Fy0-8F-vjZ" id="unR-dB-4SN"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nGq-OH-PQ6" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1007.2463768115942" y="75"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="gFH-jb-ecX"/>
+    </inferredMetricsTieBreakers>
     <resources>
         <image name="CLEAN MATRIX — NEW" width="1496" height="1296"/>
         <systemColor name="systemBackgroundColor">
