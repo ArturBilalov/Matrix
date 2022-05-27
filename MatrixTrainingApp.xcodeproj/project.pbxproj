@@ -300,6 +300,7 @@
 				DEVELOPMENT_TEAM = 4MPQ24KX7Y;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = MatrixTrainingApp/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = Matrix;
 				INFOPLIST_KEY_NSMainStoryboardFile = Main;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
@@ -331,6 +332,7 @@
 				DEVELOPMENT_TEAM = 4MPQ24KX7Y;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = MatrixTrainingApp/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = Matrix;
 				INFOPLIST_KEY_NSMainStoryboardFile = Main;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;

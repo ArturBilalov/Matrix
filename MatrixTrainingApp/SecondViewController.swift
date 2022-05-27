@@ -15,7 +15,6 @@ class SecondViewController: UIViewController {
     var yearOfBirth1: Int = 0
     var yearOfBirth2: Int = 0
     
-    
     var x1: Int = 0
     var x2: Int = 0
     var x3: Int = 0
@@ -83,9 +82,6 @@ class SecondViewController: UIViewController {
     
     @IBOutlet weak var f1Label: UILabel!
     @IBOutlet weak var f2Label: UILabel!
-
-    var j1: Int = 0
-    var j2: Int = 0
     
     func calculating() {
         
@@ -146,7 +142,7 @@ class SecondViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         calculating()
-        f1Label?.text = q1Label?.text
+        f1Label?.text = String(x0)
         f2Label?.text = String(dateOfBirth)
         
         q1Label?.text = String(x1)
