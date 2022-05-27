@@ -3,6 +3,7 @@
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="Stack View standard spacing" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
@@ -92,7 +93,6 @@
                                 <buttonConfiguration key="configuration" style="filled" title="Рассчитать"/>
                                 <connections>
                                     <action selector="calculateButton" destination="BYZ-38-t0r" eventType="touchUpInside" id="IPe-Yo-v7I"/>
-                                    <segue destination="7Dz-io-mIv" kind="presentation" identifier="goToSecond" modalPresentationStyle="fullScreen" modalTransitionStyle="flipHorizontal" id="7lC-Je-XRg"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -128,7 +128,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="jV9-Ua-vm7">
-                                <rect key="frame" x="16" y="84" width="388" height="127"/>
+                                <rect key="frame" x="16" y="84" width="388" height="56"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="4yi-W9-jtT">
                                         <rect key="frame" x="0.0" y="0.0" width="388" height="20.5"/>
@@ -157,40 +157,6 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="f2" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kcC-Wb-aE6">
-                                                <rect key="frame" x="201" y="0.0" width="187" height="20.5"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                <nil key="textColor"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                        </subviews>
-                                    </stackView>
-                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="14" translatesAutoresizingMaskIntoConstraints="NO" id="8OR-Hy-D6h">
-                                        <rect key="frame" x="0.0" y="71" width="388" height="20.5"/>
-                                        <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Месяц              " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mpi-Zk-ZUH">
-                                                <rect key="frame" x="0.0" y="0.0" width="187" height="20.5"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                <nil key="textColor"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="f3" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Lfk-Yx-xvu">
-                                                <rect key="frame" x="201" y="0.0" width="187" height="20.5"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                <nil key="textColor"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                        </subviews>
-                                    </stackView>
-                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="14" translatesAutoresizingMaskIntoConstraints="NO" id="ot0-Qq-Z45">
-                                        <rect key="frame" x="0.0" y="106.5" width="388" height="20.5"/>
-                                        <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Год рождения" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oOY-Ju-ier">
-                                                <rect key="frame" x="0.0" y="0.0" width="187" height="20.5"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                <nil key="textColor"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="f4" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Yqq-o5-uLr">
                                                 <rect key="frame" x="201" y="0.0" width="187" height="20.5"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <nil key="textColor"/>
@@ -428,9 +394,6 @@
                                 <rect key="frame" x="11" y="44" width="65.5" height="31"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Назад"/>
-                                <connections>
-                                    <segue destination="BYZ-38-t0r" kind="presentation" modalPresentationStyle="fullScreen" id="gFH-jb-ecX"/>
-                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="RvL-ot-iUN"/>
@@ -448,8 +411,6 @@
                     <connections>
                         <outlet property="f1Label" destination="mnO-58-cq4" id="iss-xV-R1K"/>
                         <outlet property="f2Label" destination="kcC-Wb-aE6" id="xCF-wD-1iN"/>
-                        <outlet property="f3Label" destination="Lfk-Yx-xvu" id="Gtv-rC-uTw"/>
-                        <outlet property="f4Label" destination="Yqq-o5-uLr" id="alY-tg-hhb"/>
                         <outlet property="myView" destination="Dci-tf-OGi" id="okm-Gj-SZL"/>
                         <outlet property="q10Label" destination="Tqd-XU-u08" id="tR5-3g-CAi"/>
                         <outlet property="q11Label" destination="cZ6-7g-rUw" id="c3L-pa-jdM"/>
@@ -485,7 +446,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ucg-2M-gVA" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="136.23188405797103" y="58.928571428571423"/>
+            <point key="canvasLocation" x="1090" y="62"/>
         </scene>
         <!--Third View Controller-->
         <scene sceneID="zK2-Hd-v2i">
@@ -531,6 +492,16 @@
                                     </textField>
                                 </subviews>
                             </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JYl-Pi-arq">
+                                <rect key="frame" x="16" y="253" width="382" height="31"/>
+                                <color key="backgroundColor" name="AccentColor"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Рассчитать"/>
+                                <connections>
+                                    <segue destination="7Dz-io-mIv" kind="presentation" identifier="goToSecond" modalPresentationStyle="fullScreen" modalTransitionStyle="flipHorizontal" id="JNo-Ia-pLG"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="3iN-bM-ukZ"/>
                         <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -538,6 +509,9 @@
                             <constraint firstItem="QPZ-BY-Z11" firstAttribute="leading" secondItem="3iN-bM-ukZ" secondAttribute="leading" constant="16" id="6Th-k3-gxQ"/>
                             <constraint firstItem="3iN-bM-ukZ" firstAttribute="trailing" secondItem="QPZ-BY-Z11" secondAttribute="trailing" constant="16" id="EPj-oH-kCL"/>
                             <constraint firstItem="QPZ-BY-Z11" firstAttribute="top" secondItem="3iN-bM-ukZ" secondAttribute="top" constant="50" id="GCI-JB-8vV"/>
+                            <constraint firstItem="JYl-Pi-arq" firstAttribute="leading" secondItem="3iN-bM-ukZ" secondAttribute="leading" constant="16" id="GzQ-b2-ygU"/>
+                            <constraint firstItem="JYl-Pi-arq" firstAttribute="top" secondItem="WkN-Bx-T76" secondAttribute="bottom" constant="65" id="Mek-mF-H6p"/>
+                            <constraint firstItem="3iN-bM-ukZ" firstAttribute="trailing" secondItem="JYl-Pi-arq" secondAttribute="trailing" constant="16" id="N6w-e9-oCw"/>
                             <constraint firstItem="WkN-Bx-T76" firstAttribute="leading" secondItem="3iN-bM-ukZ" secondAttribute="leading" constant="16" id="doY-36-1nf"/>
                             <constraint firstItem="WkN-Bx-T76" firstAttribute="top" secondItem="QPZ-BY-Z11" secondAttribute="bottom" constant="26" id="gQ7-yu-IzT"/>
                             <constraint firstItem="3iN-bM-ukZ" firstAttribute="trailing" secondItem="WkN-Bx-T76" secondAttribute="trailing" constant="16" id="gjT-CE-9mO"/>
@@ -550,14 +524,14 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nGq-OH-PQ6" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1007.2463768115942" y="75"/>
+            <point key="canvasLocation" x="280" y="62"/>
         </scene>
     </scenes>
-    <inferredMetricsTieBreakers>
-        <segue reference="gFH-jb-ecX"/>
-    </inferredMetricsTieBreakers>
     <resources>
         <image name="CLEAN MATRIX — NEW" width="1496" height="1296"/>
+        <namedColor name="AccentColor">
+            <color red="0.0" green="0.46000000000000002" blue="0.89000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

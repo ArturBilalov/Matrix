@@ -10,11 +10,15 @@ import UIKit
 class SecondViewController: UIViewController {
     
     var x0: String = ""
-    var x2String = ""
+    
+    var dateOfBirth: String = ""
+    var yearOfBirth1: Int = 0
+    var yearOfBirth2: Int = 0
+    
     
     var x1: Int = 0
     var x2: Int = 0
-    var m3: Int = 0
+    var x3: Int = 0
     var x4: Int = 0
     var x5: Int = 0
     var x6: Int = 0
@@ -43,8 +47,6 @@ class SecondViewController: UIViewController {
     var x29: Int = 0
     var x30: Int = 0
     
-    var m33: Int = 0
-    var x3: Int = 0
     
     @IBOutlet weak var myView: UIView!
     
@@ -81,14 +83,21 @@ class SecondViewController: UIViewController {
     
     @IBOutlet weak var f1Label: UILabel!
     @IBOutlet weak var f2Label: UILabel!
-    @IBOutlet weak var f3Label: UILabel!
-    @IBOutlet weak var f4Label: UILabel!
-    
+
+    var j1: Int = 0
+    var j2: Int = 0
     
     func calculating() {
-        x2String = monthConvert(numberOfMonth: x2)
-        m33 = check(theNumberBeingCompared: m3)
-        x3 = check(theNumberBeingCompared: m33)
+        
+        let dateComponents = dateOfBirth.components(separatedBy: ["/"])
+        j1 = Int(dateComponents[0]) ?? 0
+        j2 = Int(dateComponents[1]) ?? 0
+        yearOfBirth2 = Int(dateComponents[2]) ?? 0
+        yearOfBirth1 = check(theNumberBeingCompared: yearOfBirth2)
+        
+        x1 = j1
+        x2 = j2
+        x3 = check(theNumberBeingCompared: yearOfBirth1)
         x4 = check(theNumberBeingCompared: x1+x2+x3)
         x5 = check(theNumberBeingCompared: x1+x2+x3+x4)
         x6 = check(theNumberBeingCompared: x1+x5)
@@ -126,23 +135,21 @@ class SecondViewController: UIViewController {
         return z
     }
     
-    func monthConvert(numberOfMonth: Int) -> String {
-        var month = ""
-        let x = numberOfMonth
-        if x == 1 {month = "Январь"} else if x == 2 {month = "Февраль"} else if x == 3 {month = "Март"} else if x == 4 {month = "Апрель"} else if x == 5 {month = "Май"} else if x == 6 {month = "Июнь"} else if x == 7 {month = "Июль"} else if x == 8 {month = "Август"} else if x == 9 {month = "Сентябрь"} else if x == 10 {month = "Октябрь"}  else if x == 11 {month = "Ноябрь"}  else if x == 12 {month = "Декабрь"}
-        else {
-            month = "Месяц введен неправильно"
-        }
-        return month
-    }
+//    func monthConvert(numberOfMonth: Int) -> String {
+//        var month = ""
+//        let x = numberOfMonth
+//        if x == 1 {month = "Январь"} else if x == 2 {month = "Февраль"} else if x == 3 {month = "Март"} else if x == 4 {month = "Апрель"} else if x == 5 {month = "Май"} else if x == 6 {month = "Июнь"} else if x == 7 {month = "Июль"} else if x == 8 {month = "Август"} else if x == 9 {month = "Сентябрь"} else if x == 10 {month = "Октябрь"}  else if x == 11 {month = "Ноябрь"}  else if x == 12 {month = "Декабрь"}
+//        else {
+//            month = "Месяц введен неправильно"
+//        }
+//        return month
+//    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
         calculating()
         f1Label?.text = String(x0)
-        f2Label?.text = String(x1)
-        f3Label?.text = String(x2String)
-        f4Label?.text = String(m3)
+        f2Label?.text = String(dateOfBirth)
         
         q1Label?.text = String(x1)
         q2Label?.text = String(x2)
