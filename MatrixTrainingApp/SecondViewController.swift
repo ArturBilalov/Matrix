@@ -90,13 +90,11 @@ class SecondViewController: UIViewController {
     func calculating() {
         
         let dateComponents = dateOfBirth.components(separatedBy: ["/"])
-        j1 = Int(dateComponents[0]) ?? 0
-        j2 = Int(dateComponents[1]) ?? 0
         yearOfBirth2 = Int(dateComponents[2]) ?? 0
         yearOfBirth1 = check(theNumberBeingCompared: yearOfBirth2)
         
-        x1 = j1
-        x2 = j2
+        x1 = Int(dateComponents[0]) ?? 0
+        x2 = Int(dateComponents[1]) ?? 0
         x3 = check(theNumberBeingCompared: yearOfBirth1)
         x4 = check(theNumberBeingCompared: x1+x2+x3)
         x5 = check(theNumberBeingCompared: x1+x2+x3+x4)
@@ -148,7 +146,7 @@ class SecondViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         calculating()
-        f1Label?.text = String(x0)
+        f1Label?.text = q1Label?.text
         f2Label?.text = String(dateOfBirth)
         
         q1Label?.text = String(x1)
